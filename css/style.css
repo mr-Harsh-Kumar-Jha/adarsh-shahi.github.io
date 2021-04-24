@@ -1,0 +1,194 @@
+.indexBody{
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav{
+    position: relative;
+    background-color: white;
+    padding: 20px;
+}
+
+.proConDiv{
+    display: inline;
+    position: relative;
+    float: right;
+    color: black;
+}
+
+.divText{
+    position: absolute;
+    color: white;
+    top: 15%;
+    width: 100%;
+}
+
+.contactMargin{
+    margin-left: 15px;
+    background-color: white;
+    border: 1.5px solid;
+    color: black;
+    padding: 12px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.contactMargin:hover {
+    color: white;
+    background-color: #1b1717;
+  }
+
+.developerP{
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+.introDiv{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.introImg{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 3.1rem;
+}
+
+h2{
+    margin: 0;
+    color: black;
+    font-family:  Roboto, sans-serif;
+    display: inline;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.blackDiv{
+    background-color: #1b1717;
+    height: 400px;
+}
+
+
+.whiteDiv{
+    background-color: white;
+    height: 200px;
+}
+
+.grayDiv{
+    background-color: gray;
+    height: 100px;
+}
+
+h3{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+
+.gearText{
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 140px;
+}
+
+.contactText{
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 140px;
+}
+
+.letsConnectText{
+    width: 100%;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 140px;
+  }
+
+.gearDiv{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: #1b1717;
+    border-collapse: collapse;
+}
+
+.contactDiv{
+    width: 20%;
+    height: 100%;
+    float: right;
+    position: relative;
+    background-color: #1b1717;
+    border-collapse: collapse;
+}
+
+
+
+/******************FOOTER SOCIAL PARITION***********************/
+
+.socialAccountsDiv{
+    text-align: center;
+    float: left;
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+.instagramLogo{
+    width: 7%;
+}
+.instagramLogo:hover{
+    width: 8%;
+}
+.linkedInLogo{
+    width: 7%;
+}
+.linkedInLogo:hover{
+    width: 8%;
+}
+.facebookLogo{
+    width: 7%;
+}
+.facebookLogo:hover{
+    width: 8%;
+}
+.githubLogo{
+    width: 7%;
+}
+.githubLogo:hover{
+    width: 8%;
+}
+.twitterLogo{
+    width: 7%;
+}
+.twitterLogo:hover{
+    width: 8%;
+}
+.youtubeLogo{
+    width: 7%;
+}
+.youtubeLogo:hover{
+    width: 8%;
+}
