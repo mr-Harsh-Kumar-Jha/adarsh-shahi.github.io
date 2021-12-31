@@ -1,194 +1,229 @@
-.indexBody{
-    margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
 }
 
-.nav{
-    position: relative;
-    background-color: white;
-    padding: 20px;
+nav{
+    width:100vw;
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+}
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    height:76px;
+    padding:40px;
+}
+.navbar div,.navbar div a{
+   color:white;
+   font-weight: bolder;
+   list-style-type: none;
+   text-decoration: none;
+   margin-left:30px;
+
+}
+.enroll{
+   display:flex;
+   flex-direction: row;
+   justify-content:flex-start;
+   align-items: center;
+   height:76px;
+   padding:40px;
+}
+.enroll div a{
+   color:white;
+   font-weight: bolder;
+   text-decoration:none;
+   margin-left:20px;
+}
+.brand{
+   font-size: xx-large;
+   font-family: 'The Nautigal', cursive;
+}
+.SignUp a,.login a{
+   background-color: red;
+   padding:10px;
+   border-radius:10px;
+}
+.blank{
+   height:77px;
+}
+.Gear a:hover,.software a:hover,.home a:hover,.contact a:hover,.login a:hover,.SignUp a:hover{
+   border-bottom:2px solid white;
 }
 
-.proConDiv{
-    display: inline;
-    position: relative;
-    float: right;
-    color: black;
+.introduction{
+   height:calc(85vh);
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap:nowrap;
+   /* background: url('https://devoncrawford.io/static/images/IMG_1691.jpg')
+   no-repeat center center/cover;
+   z-index=-1;
+   opacity:0.7; */
 }
 
-.divText{
-    position: absolute;
-    color: white;
-    top: 15%;
-    width: 100%;
+.introduction span,p{
+   font-size: xx-large;
+   font-family: 'Yuji Hentaigana Akebono', cursive;
+   color:rgb(54, 236, 108);
+   flex-wrap:wrap-reverse;
+}
+.introduction::before {
+   content: '';
+   background: url('https://devoncrawford.io/static/images/IMG_1691.jpg')
+       no-repeat center center/cover;
+   position: absolute;
+   opacity: 0.7;
+   width: 100vw;
+   height:85vh;
+   z-index: -1;
+}
+.resume{
+   background-color:rgb(177, 40, 177);
+   padding:10px;
+   border-radius:10px;
+}
+.resume a{
+   text-decoration: none;
+   font-size:large;
+   color:white;
+}
+.resume a:hover{
+   color:yellow;
+   border-bottom:1px solid yellow;
+}
+.MyWork{
+   margin-top:10px;
+   height:calc(40vh);
+   width:100vw;
+   border:1px solid rgb(214, 91, 214);
+   padding:10px;
+}
+.popularProject{
+   margin-top:10px;
+   height:calc(40vh);
+   width:100vw;
+   border:1px solid rgb(214, 91, 214);
+   padding:10px;
 }
 
-.contactMargin{
-    margin-left: 15px;
-    background-color: white;
-    border: 1.5px solid;
-    color: black;
-    padding: 12px 22px;
-    font-size: 16px;
-    cursor: pointer;
-    border-color: black;
-    border-radius: 20px;
+/* ------------------------------------footer design starts---------------------------------------- */
+footer{
+   display:flex;
+   flex-direction: row;
+   background-color:black;
+   align-items:center;
+   justify-content: space-between;
+    padding-left:30px;
+   /* margin-right:30px; */
+   width:100vw;
+   margin-top:calc(100vh);
 }
-
-.contactMargin:hover {
-    color: white;
-    background-color: #1b1717;
-  }
-
-.developerP{
-    text-decoration: underline;
-    color: aquamarine;
+.foot{
+   display:flex;
+   padding:20px;
+   flex-direction:column;
+   /* background-color: black; */
+   /* margin-right:90px; */
 }
-
-.introDiv{
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 700px;
+.foot img{
+   height:130px;
+   width:150px;
+   border-radius:150%;
 }
-
-.introImg{
-    width: 100%;
-    height: 100%;
+.foot span{
+   color:white;
+   margin-top:10px;
+   font-size:x-large;
+   font-family:'The Nautigal', cursive;
+   font-weight: bolder;
+   margin-left:10px;
+   width:150px;
 }
-
-h1{
-    font-size: 3.1rem;
+.links{
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   /* margin-left:70px; */
+   /* margin-right:50px; */
+   width:68%;
+   height:100%;
+   margin-right:30px;
+   flex-wrap: wrap;
 }
-
-h2{
-    margin: 0;
-    color: black;
-    font-family:  Roboto, sans-serif;
-    display: inline;
-    font-weight: normal;
-    font-size: 1.3rem;
+.links span{
+   font-size: xx-large;
+   color: blueviolet;
 }
-
-a{
+.text2{
+   display:flex;
+   padding:20px;
+   width:80%;
+}
+.text2 a img{
+   height:80%;
+   width:80%;
+}
+.contact2 a{
     text-decoration: none;
-    margin: 0;
+    color:white;
+    /* margin-left:50px; */
+    padding-right:40px;
+    font-size:xx-large;
+}
+.contact2 a:hover{
+   color:yellow;
 }
 
-.blackDiv{
-    background-color: #1b1717;
-    height: 400px;
+.linkedInLogo:hover,.twitterLogo:hover,.instagramLogo:hover,.facebookLogo:hover,.githubLogo:hover{
+   width: 60%;
 }
 
+/* ------------------------------------footer design ends------------------------------------------ */
 
-.whiteDiv{
-    background-color: white;
-    height: 200px;
+/* ------------------------------------media query fireing----------------------------------------- */
+@media only screen and (max-width:599px){
+   .enroll{
+      display:none;
+   }
+   .nav{
+      justify-content:center;
+   }
+   .brand{
+      font-size:x-small;
+   }
 }
-
-.grayDiv{
-    background-color: gray;
-    height: 100px;
+@media only screen and (max-width:926px){
+   .enroll{
+      display:none;
+   }
+   .nav{
+      justify-content:center;
+      padding:20px;
+   }
+   .brand{
+      font-size: x-large;
+   }
+   .foot img{
+      height:100px;
+      width:100px;
+      border-radius:150%;
+   }
+   .foot span{
+      margin-left:10px;
+      width:120px;
+   }
 }
-
-h3{
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-
-
-.gearText{
-    font-size: 1.4rem;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 140px;
-}
-
-.contactText{
-    font-size: 1.4rem;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 140px;
-}
-
-.letsConnectText{
-    width: 100%;
-    font-size: 1.4rem;
-    margin-top: 10px;
-}
-
-.container {
-    width: 100%;
-    height: 140px;
-  }
-
-.gearDiv{
-    width: 20%;
-    height: 100%;
-    float: left;
-    background-color: #1b1717;
-    border-collapse: collapse;
-}
-
-.contactDiv{
-    width: 20%;
-    height: 100%;
-    float: right;
-    position: relative;
-    background-color: #1b1717;
-    border-collapse: collapse;
-}
-
-
-
-/******************FOOTER SOCIAL PARITION***********************/
-
-.socialAccountsDiv{
-    text-align: center;
-    float: left;
-    background-color: white;
-    height: 100%;
-    width: 60%;
-    margin: 0;
-    border-collapse: collapse;
-}
-
-.instagramLogo{
-    width: 7%;
-}
-.instagramLogo:hover{
-    width: 8%;
-}
-.linkedInLogo{
-    width: 7%;
-}
-.linkedInLogo:hover{
-    width: 8%;
-}
-.facebookLogo{
-    width: 7%;
-}
-.facebookLogo:hover{
-    width: 8%;
-}
-.githubLogo{
-    width: 7%;
-}
-.githubLogo:hover{
-    width: 8%;
-}
-.twitterLogo{
-    width: 7%;
-}
-.twitterLogo:hover{
-    width: 8%;
-}
-.youtubeLogo{
-    width: 7%;
-}
-.youtubeLogo:hover{
-    width: 8%;
-}
+/* ------------------------------------media query ends-------------------------------------------- */
