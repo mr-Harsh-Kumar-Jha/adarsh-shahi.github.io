@@ -328,7 +328,7 @@ footer{
       height: 0.75rem;
   }
 }
-@media only screen and (max-width:900px){
+@media only screen and (max-width:926px){
    .enroll{
       display:none;
    }
