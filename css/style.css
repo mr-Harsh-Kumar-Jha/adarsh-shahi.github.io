@@ -52,6 +52,9 @@ nav{
    padding:10px;
    border-radius:10px;
 }
+button{
+   display:none;
+}
 .blank{
    height:77px;
 }
@@ -217,7 +220,7 @@ footer{
    .enroll{
       display:none;
    }
-   .nav{
+   nav{
       justify-content:center;
    }
    .brand{
@@ -244,12 +247,36 @@ footer{
       align-items: center;
       justify-content: center;
    }
+   .enroll,.home,.Gear,.software{
+      display:none;
+   }
+   .menu{
+        border-radius: 5px;
+        margin-top:25px;
+   }
+   button {
+      align-items:center;
+      justify-content:center;
+      display:flex;
+      width:40px;
+      height:30px;
+   }
+   .fill-current {
+      fill: currentColor;
+  }
+
+  .w-3 {
+      width: 0.75rem;
+  }
+  .h-3 {
+      height: 0.75rem;
+  }
 }
-@media only screen and (min-width:500px) and (max-width:599px){
+@media only screen and (min-width:500px) and (max-width:600px){
    .enroll{
       display:none;
    }
-   .nav{
+   nav{
       justify-content:center;
    }
    .brand{
@@ -276,17 +303,41 @@ footer{
       align-items: center;
       justify-content: center;
    }
+   .enroll,.home,.Gear,.software{
+      display:none;
+   }
+   .menu{
+        border-radius: 5px;
+        margin-top:25px;
+   }
+   button {
+      align-items:center;
+      justify-content:center;
+      display:flex;
+      width:40px;
+      height:30px;
+   }
+   .fill-current {
+      fill: currentColor;
+  }
+
+  .w-3 {
+      width: 0.75rem;
+  }
+  .h-3 {
+      height: 0.75rem;
+  }
 }
-@media only screen and (max-width:926px){
+@media only screen and (max-width:900px){
    .enroll{
       display:none;
    }
-   .nav{
+   nav{
       justify-content:center;
-      padding:20px;
+      /* padding:20px; */
    }
    .brand{
-      font-size: large;
+      font-size: xx-large;
    }
    .foot img{
       height:150px;
