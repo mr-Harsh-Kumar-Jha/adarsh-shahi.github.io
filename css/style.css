@@ -132,7 +132,7 @@ footer{
 }
 .foot{
    display:flex;
-   padding:20px;
+   /* padding:20px; */
    flex-direction:column;
    /* background-color: black; */
    /* margin-right:90px; */
@@ -188,11 +188,11 @@ footer{
    width:10%;
    text-align:center;
 }
-.contact{
-   /* padding-right:100px; */
-   text-align:center;
+/* .contact2{
+    padding-right:100px;
+    text-align:center;
    width:15%;
-}
+} */
 .contact2 a{
     text-decoration: none;
     color:white;
@@ -213,7 +213,7 @@ footer{
 /* ------------------------------------footer design ends------------------------------------------ */
 
 /* ------------------------------------media query fireing----------------------------------------- */
-@media only screen and (max-width:599px){
+@media only screen and (max-width:499px){
    .enroll{
       display:none;
    }
@@ -221,7 +221,60 @@ footer{
       justify-content:center;
    }
    .brand{
-      font-size:x-small;
+      font-size:small;
+   }
+   /* .foot span{
+      font-size:small;
+   } */
+   .links span{
+      font-size: xx-large;
+   }
+   .text2 a{
+      width:90%;
+   }
+   .links{
+      width:90%;
+      height:100%;
+      padding-top:30px;
+      padding-bottom:30px;
+   }
+   footer{
+      padding:10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+}
+@media only screen and (min-width:500px) and (max-width:599px){
+   .enroll{
+      display:none;
+   }
+   .nav{
+      justify-content:center;
+   }
+   .brand{
+      font-size:small;
+   }
+   /* .foot span{
+      font-size:small;
+   } */
+   .links span{
+      font-size: large;
+   }
+   .text2 a{
+      width:90%;
+   }
+   .links{
+      width:90%;
+      height:100%;
+      padding-top:60px;
+      padding-bottom:60px;
+   }
+   footer{
+      padding:10px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
    }
 }
 @media only screen and (max-width:926px){
@@ -233,16 +286,17 @@ footer{
       padding:20px;
    }
    .brand{
-      font-size: x-large;
+      font-size: large;
    }
    .foot img{
-      height:100px;
-      width:100px;
-      border-radius:150%;
+      height:150px;
+      /* width:100px; */
+      /* border-radius:150%; */
    }
-   .foot span{
-      margin-left:10px;
+   /* .foot span{
+      /* margin-left:10px;
+      font-size:large;
       width:120px;
-   }
+   } */
 }
 /* ------------------------------------media query ends-------------------------------------------- */
