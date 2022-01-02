@@ -272,7 +272,7 @@ footer{
       height: 0.75rem;
   }
 }
-@media only screen and (min-width:500px) and (max-width:600px){
+@media only screen and (min-width:500px) and (max-width:644px){
    .enroll{
       display:none;
    }
@@ -349,5 +349,26 @@ footer{
       font-size:large;
       width:120px;
    } */
+   .menu{
+      border-radius: 5px;
+      margin-top:25px;
+ }
+ button {
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    width:40px;
+    height:30px;
+ }
+ .fill-current {
+    fill: currentColor;
+}
+
+.w-3 {
+    width: 0.75rem;
+}
+.h-3 {
+    height: 0.75rem;
+}
 }
 /* ------------------------------------media query ends-------------------------------------------- */
