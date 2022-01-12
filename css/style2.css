@@ -78,6 +78,7 @@ nav div:nth-of-type(2) {width: 2;} */
 }
 .blank{
    height:80px;
+   background-color:#9d9595;
 }
 .Gear a:hover,.software a:hover,.home a:hover,.contact a:hover,.login a:hover,.SignUp a:hover{
    border-bottom:2px solid white;
