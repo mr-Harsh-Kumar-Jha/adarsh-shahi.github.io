@@ -5,6 +5,9 @@
    margin:0;
    padding:0;
 }
+/* body{
+   height:900px;
+} */
 nav{
    display:flex;
    width:100vw;
@@ -34,13 +37,13 @@ nav div:nth-of-type(2) {width: 2;} */
    /* opacity:1; */
 }
 .department{
-   display:flex;
+   display:none;
    width:90%;
    justify-content: space-between;
    align-items: center;
 }
 .navbar{
-   display:flex;
+   display:none;
 
 }
 .navbar div{
@@ -55,7 +58,8 @@ nav div:nth-of-type(2) {width: 2;} */
    /* opacity:1; */
 }
 .enroll{
-   display:flex;
+   /* display:flex; */
+   display:none;
 }
 .enroll div a{
    color:white;
@@ -113,7 +117,7 @@ nav div:nth-of-type(2) {width: 2;} */
    position: absolute;
    opacity: 0.7;
    width: 100vw;
-   height:85vh;
+   height:100%;
    z-index: -1;
 }
 .resume{
@@ -131,21 +135,112 @@ nav div:nth-of-type(2) {width: 2;} */
    border-bottom:1px solid yellow;
 }
 .MyWork{
-   margin-top:10px;
-   height:calc(40vh);
+   /* margin-top:10px; */
+   height:calc(85vh);
    width:100vw;
-   border:1px solid rgb(214, 91, 214);
-   padding:10px;
+   flex-direction: row;;
+
+
+   /* border:1px solid rgb(214, 91, 214); */
+   /* padding:10px; */
+   display:none;
+
+
+}
+.MyWork span{
+   color:rgb(116, 27, 233);
+   font-size: xx-large;
+   font-weight: bolder;
+   margin-left: 20px;
+   margin-top:20px
+}
+.MyWork::before {
+   content: '';
+   background: url('https://devoncrawford.io/static/images/IMG_1691.jpg')
+       no-repeat center center/cover;
+   position: absolute;
+   opacity: 0.7;
+   width: 100vw;
+   height:100%;
+   z-index: -1;
 }
 .popularProject{
-   margin-top:10px;
-   height:calc(40vh);
+   /* margin-top:10px; */
+   height:calc(85vh);
    width:100vw;
-   border:1px solid rgb(214, 91, 214);
-   padding:10px;
+   /* border:1px solid rgb(214, 91, 214); */
+   /* padding:10px; */
+   display:none;
+}
+.popularProject::before {
+   content: '';
+   background: url('https://devoncrawford.io/static/images/IMG_1691.jpg')
+       no-repeat center center/cover;
+   position: absolute;
+   opacity: 0.7;
+   width: 100vw;
+   height:100%;
+   z-index: -1;
+}
+.popularProject span{
+   background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: xx-large;
+        font-weight: bolder;
+        margin-left:20px;
+        margin-top:20px;
 }
 
-/* ------------------------------------footer design starts---------------------------------------- */
+.enrollbroth{
+   display:flex;
+   flex-direction: column;
+   position:absolute;
+   justify-content: space-around;
+   height:120px;
+  align-items: center;
+   top:70px;
+   right:60px;
+   width:100px;
+   background:rgb(70, 69, 69,0.5);
+}
+.deep{
+   display:flex;
+   flex-direction: column;
+   position:absolute;
+   width:100vw;
+   background-color: rgb(53, 51, 51,0.7);
+   justify-content: space-around;
+   align-items: center;
+   height:120px;
+   top:80px;
+   left:0px;
+}
+
+
+/*.changebtn div{
+   margin-left:5px;
+   margin-right:5px;
+} */
+.sm-btns{
+   cursor: pointer;
+   height: 25px;
+   width: 25px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+   border:2px solid black;
+}
+
+.sm-btns:hover{
+   background:grey;
+}
+
+/* ------------------------------footer design starts----------------------------------- */
 footer{
    display:flex;
    flex-direction: row;
@@ -155,7 +250,7 @@ footer{
     padding:30px;
    /* margin-right:30px; */
    width:100vw;
-   margin-top:calc(100vh);
+   /* margin-top:calc(100vh); */
 }
 .foot{
    display:flex;
@@ -235,15 +330,33 @@ footer{
 .linkedInLogo:hover,.twitterLogo:hover,.instagramLogo:hover,.facebookLogo:hover,.githubLogo:hover{
    width: 60%;
 }
+/* .zero{
+   display: none;
+}
+.first{
+   display:none;
+}
+.second{
+   display:none;
+} */
 
 
 
-/* ------------------------------------footer design ends------------------------------------------ */
 
-/* ------------------------------------media query fireing----------------------------------------- */
+/* ---------------------------------footer design ends---------------------------------- */
+
+/* ---------------------------------media query fireing----------------------------------- */
 @media only screen and (max-width:310px) {
    .enroll{
-      display:none;
+      display:flex;
+   }
+   .navbar{
+      display:flex;
+      width:100%;
+      justify-content: center;
+   }
+   .navbar div{
+      padding-right: 0;
    }
    nav{
       justify-content: center;
@@ -278,9 +391,9 @@ footer{
       align-items: center;
       justify-content: center;
    }
-   .enroll,.home,.Gear,.software{
+   /* .enroll,.home,.Gear,.software{
       display:none;
-   }
+   } */
    .menu{
         border-radius: 5px;
         display:flex;
@@ -306,7 +419,15 @@ footer{
 }
 @media only screen and (min-width:311px)and (max-width:499px){
    .enroll{
-      display:none;
+      display:flex;
+   }
+   .navbar{
+      display:flex;
+      width:100%;
+      justify-content: center;
+   }
+    .navbar div{
+      padding-right: 0;
    }
    nav{
       justify-content: end;
@@ -341,9 +462,9 @@ footer{
       align-items: center;
       justify-content: center;
    }
-   .enroll,.home,.Gear,.software{
+   /* .enroll,.home,.Gear,.software{
       display:none;
-   }
+   } */
    .menu{
         border-radius: 5px;
         display:flex;
@@ -368,21 +489,21 @@ footer{
 }
 @media only screen and (min-width:500px) and (max-width:644px){
    .enroll{
-      display:none;
+      display:flex;
    }
    nav{
       justify-content:center;
    }
-   .department{
+   /* .department{
       width:50vw;
-   }
+   } */
    .brand{
 
       width:1550%;
       text-align: center;
    }
    .brand span{
-      width:100%;
+      /* width:100%; */
       font-size:xx-large;
    }
    /* .foot span{
@@ -406,9 +527,21 @@ footer{
       align-items: center;
       justify-content: center;
    }
-   .enroll,.home,.Gear,.software{
-      display:none;
+   /* .home a,.Gear a,.software a{
+      text-align: center;
+   } */
+   .navbar{
+      display:flex;
+      width:100%;
+      justify-content: center;
    }
+    .navbar div{
+      padding-right: 0;
+   }
+   /*
+   .navbar div a{
+      margin-right:0;
+   } */
    .menu{
         border-radius: 5px;
         /* margin-top:25px; */
@@ -433,15 +566,23 @@ footer{
   }
 }
 @media only screen and (min-width:645px) and (max-width:926px){
-   .enroll{
-      display:none;
+   .enroll div{
+     margin-right: 0;
    }
+   .navbar{
+      display:flex;
+   }
+
+   /* .enroll{
+      position:absolute;
+   } */
    nav{
       justify-content:center;
       /* padding:20px; */
    }
    .department{
       width:50%;
+      display:flex;
    }
    .brand{
       font-size: xx-large;
@@ -478,5 +619,17 @@ footer{
 .h-3 {
     height: 0.75rem;
 }
+}
+
+@media only screen and (min-width:927px) {
+   .enroll{
+      display:flex;
+   }
+   .navbar{
+      display:flex;
+   }
+   .department{
+      display: flex;
+   }
 }
 /* ------------------------------------media query ends-------------------------------------------- */
