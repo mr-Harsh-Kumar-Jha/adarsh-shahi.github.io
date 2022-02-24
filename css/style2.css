@@ -240,6 +240,10 @@ nav div:nth-of-type(2) {width: 2;} */
    background:grey;
 }
 
+.Active{
+   background:black;
+}
+
 /* ------------------------------footer design starts----------------------------------- */
 footer{
    display:flex;
