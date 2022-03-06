@@ -177,6 +177,12 @@ nav div:nth-of-type(2) {width: 2;} */
    margin-top:15px;
    /* margin-left:5px; */
 }
+table{
+   width:100%;
+    /* overflow-x:auto;
+    overflow-y: auto; */
+    border-spacing: 0;
+}
 table, th, td{
    border:2px solid red;
    border-style: dotted;
