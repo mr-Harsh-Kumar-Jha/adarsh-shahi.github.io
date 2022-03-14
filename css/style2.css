@@ -146,7 +146,7 @@ nav div:nth-of-type(2) {width: 2;} */
    flex-direction: row;;
    display:flex;
    flex-direction: column;
-
+    font-family:'Times New Roman', Times, serif;
    /* border:1px solid rgb(214, 91, 214); */
    /* padding:10px; */
    display:none;
@@ -155,15 +155,15 @@ nav div:nth-of-type(2) {width: 2;} */
 }
 .MyWork span{
    color:rgb(116, 27, 233);
-   font-size: xx-large;
+   font-size: 80px;
    font-weight: bolder;
    margin-left: 20px;
    margin-top:20px
 }
 .MyWork::before {
    content: '';
-   background: url('https://media.istockphoto.com/photos/web-simple-browser-window-with-social-network-icons-abstract-trendy-picture-id1290083147')
-       no-repeat center center/cover;
+   /* background: url('https://media.istockphoto.com/photos/web-simple-browser-window-with-social-network-icons-abstract-trendy-picture-id1290083147')
+       no-repeat center center/cover; */
    position: absolute;
    opacity: 0.7;
    width: 100vw;
@@ -201,6 +201,7 @@ th{
 }
 tr td{
    text-align: center;
+   font-family: 'Ubuntu Mono', monospace;
 }
 td{
    font-size: x-large;
