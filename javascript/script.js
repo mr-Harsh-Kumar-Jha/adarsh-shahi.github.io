@@ -1,95 +1,31 @@
-console.log("hi!!");
+'use strict';
 
-const menu = document.querySelector('.menu');
-const enroll = document.querySelector('.enroll');
-const department = document.querySelector('.department');
-let MyWork = document.querySelector('#ones');
-let introduction = document.querySelector('#zeros');
-let popularProject = document.querySelector('#twos');
+///////////////////////////////////////
+// Modal window
 
-let first = document.querySelector('#firsts');
-let second = document.querySelector('#seconds');
-let third = document.querySelector('#thirds');
-// const introduction=document.querySelector('.introduction');
-// const mywork=document.querySelector('.MyWork');
-let prev = 0;
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.btn--close-modal');
+const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 
-function hamburger() {
-   if (screen.width >= 645 && screen.width <= 926) {
-         enroll.classList.toggle("enrollbroth");
-   }
-   else if (screen.width >= 500 && screen.width <= 644) {
-         department.classList.toggle("deep");
-   }
-   else if (screen.width >= 300 && screen.width <= 499) {
-         department.classList.toggle("deep");
-   }
-   else if (screen.width <= 299) {
-         department.classList.toggle("deep");
+const openModal = function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
 
-   }
-}
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
 
-function btn(e) {
-   if (e === 0) {
-      if (prev != 0) {
-         if (prev === 1) {
-            MyWork.style.display = "none";
-            second.classList.remove('Active');
-            document.querySelector('.introduction').style.display = "flex";
-            //   introduction.style.display="flex";
-            //   document.querySelector('#firsts').classList.add('Active');
-            first.classList.add('Active');
-            prev = 0;
-         }
-         else if (prev === 2) {
-            popularProject.style.display = "none";
-            third.classList.remove('Active');
-            document.querySelector('.introduction').style.display = "flex";
-            // document.querySelector('#firsts').classList.add('Active');
-            first.classList.add('Active');
-            prev = 0;
-         }
-      }
-   }
-   else if (e === 1) {
-      if (prev != 1) {
-         if (prev === 0) {
-            introduction.style.display = "none";
-            first.classList.remove('Active');
-            document.querySelector('.MyWork').style.display = "flex";
-            //   document.querySelector('#seconds').classList.add('Active');
-            second.classList.add('Active');
-            prev = 1;
-         }
-         else if (prev === 2) {
-            popularProject.style.display = "none"
-            third.classList.remove('Active');
-            document.querySelector('.MyWork').style.display = "flex";
-            // document.querySelector('#seconds').classList.add('Active');
-            second.classList.add('Active');
-            prev = 1;
-         }
-      }
-   }
-   else if (e === 2) {
-      if (prev != 2) {
-         if (prev === 0) {
-            introduction.style.display = "none";
-            first.classList.remove('Active');
-            document.querySelector('.popularProject').style.display = "flex";
-            // document.querySelector('#thirds').classList.add('Active');
-            third.classList.add('Active');
-            prev = 2;
-         }
-         else if (prev === 1) {
-            MyWork.style.display = "none"
-            second.classList.remove('Active');
-            document.querySelector('.popularProject').style.display = "flex";
-            // document.querySelector('#thirds').classList.add('Active');
-            third.classList.add('Active');
-            prev = 2;
-         }
-      }
-   }
-}
+for (let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener('click', openModal);
+
+btnCloseModal.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
