@@ -115,9 +115,9 @@ const handleHover = function (e, opacity) {
 		const logo = link.closest(".nav").querySelector("img");
 
 		linkSiblings.forEach((el) => {
-			if (el !== link) el.style.opacity = 0.5;
+			if (el !== link) el.style.opacity = opacity;
 		});
-		logo.style.opacity = 0.5;
+		logo.style.opacity = opacity;
 	}
 };
 
