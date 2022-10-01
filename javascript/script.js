@@ -55,7 +55,6 @@ btnScrollTo.addEventListener("click", (e) => {
 	section1Projects.scrollIntoView({ behavior: "smooth" });
 });
 
-
 // document.querySelectorAll('.nav__link').forEach(ele => {
 //   ele.addEventListener('click', function(e)  {
 //     e.preventDefault();
@@ -68,22 +67,40 @@ btnScrollTo.addEventListener("click", (e) => {
 // 1. Add event listener to common parent element
 // 2. Determine what element originated the event
 
-document.querySelector('.nav__links').addEventListener('click', function(e){
-  e.preventDefault()
-  
-  // match 
-  if(e.target.classList.contains('nav__link')){
-    const id = e.target.getAttribute('href')
-    document.querySelector(id).scrollIntoView({behavior: 'smooth'})
-  }
-})
+document.querySelector(".nav__links").addEventListener("click", function (e) {
+	e.preventDefault();
 
+	// match
+	if (e.target.classList.contains("nav__link")) {
+		const id = e.target.getAttribute("href");
+		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+	}
+});
 
+const tabs = document.querySelectorAll(".operations__tab");
+const tabsContainer = document.querySelector(".operations__tab-container");
+const tabsContent = document.querySelectorAll(".operations__content");
 
+const operationsContent = document.querySelectorAll(".operations__content");
 
+tabsContainer.addEventListener("click", function (e) {
+	const clicked = e.target.closest(".operations__tab");
+	if (!clicked) return;
+	tabs.forEach((btn) => {
+		btn.classList.remove("operations__tab--active");
+	});
+	clicked.classList.add("operations__tab--active");
+	// if(e.target.classList.contains('operations__tab'))
+	const dataTab = clicked.getAttribute("data-tab");
+	console.log(dataTab);
 
+	operationsContent.forEach((ele) => {
+		ele.classList.remove("operations__content--active");
+	});
 
-
-
-
-
+	const activeContent = document.querySelector(
+		`.operations__content--` + dataTab
+	);
+	console.log(activeContent);
+	activeContent.classList.add("operations__content--active");
+});
