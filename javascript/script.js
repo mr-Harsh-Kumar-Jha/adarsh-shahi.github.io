@@ -56,11 +56,34 @@ btnScrollTo.addEventListener("click", (e) => {
 });
 
 
-document.querySelectorAll('.nav__link').forEach(ele => {
-  ele.addEventListener('click', function(e)  {
-    e.preventDefault();
-    const id = this.getAttribute('href')
+// document.querySelectorAll('.nav__link').forEach(ele => {
+//   ele.addEventListener('click', function(e)  {
+//     e.preventDefault();
+//     const id = this.getAttribute('href')
+//     document.querySelector(id).scrollIntoView({behavior: 'smooth'})
+//   })
+// })
+
+// Using Event Delegation
+// 1. Add event listener to common parent element
+// 2. Determine what element originated the event
+
+document.querySelector('.nav__links').addEventListener('click', function(e){
+  e.preventDefault()
+  
+  // match 
+  if(e.target.classList.contains('nav__link')){
+    const id = e.target.getAttribute('href')
     document.querySelector(id).scrollIntoView({behavior: 'smooth'})
-  })
+  }
 })
+
+
+
+
+
+
+
+
+
 
