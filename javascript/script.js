@@ -104,3 +104,41 @@ tabsContainer.addEventListener("click", function (e) {
 	console.log(activeContent);
 	activeContent.classList.add("operations__content--active");
 });
+
+const nav = document.querySelector('.nav')
+
+
+
+nav.addEventListener('mouseover', function(e){
+  e.preventDefault() 
+  if(e.target.classList.contains('nav__link')){
+    const link = e.target;
+    const linkSiblings = link.closest('.nav').querySelectorAll('.nav__link')
+
+    const logo = link.closest('.nav').querySelector('img')
+
+    linkSiblings.forEach(el => {
+      if(el !== link) el.style.opacity = 0.5
+    })
+    logo.style.opacity = 0.5
+
+  }
+  
+})
+
+nav.addEventListener('mouseout',function(e) {
+  e.preventDefault() 
+  if(e.target.classList.contains('nav__link')){
+    const link = e.target;
+    const linkSiblings = link.closest('.nav').querySelectorAll('.nav__link')
+
+    const logo = link.closest('.nav').querySelector('img')
+
+    linkSiblings.forEach(el => {
+      if(el !== link) el.style.opacity = 1
+    })
+    logo.style.opacity = 1
+
+  }
+  
+})
