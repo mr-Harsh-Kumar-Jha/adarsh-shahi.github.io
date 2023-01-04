@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"title": "Omnifood",
+		"description": "UI/UX for The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. ",
+		"sourceCode": "https://github.com/adarsh-shahi/html-css/tree/master/omnifood",
+		"live": "https://adarsh-omnifood.netlify.app/",
+		"img": "./img/Adarsh_Shahi_whiteBg.jpg"
+	},
+	{
+		"id": 2,
+		"title": "Tic-Tac-Toe",
+		"description": "3 levels for The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. ",
+		"sourceCode": "https://github.com/adarsh-shahi/tic-tac-toe",
+		"live": "https://adarsh-omnifood.netlify.app/",
+		"img": "./img/Adarsh_Shahi_whiteBg.jpg"
+	},
+	{
+		"id": 1,
+		"title": "Maze Haze",
+		"description": "Escape the maze for The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. ",
+		"sourceCode": "https://github.com/adarsh-shahi/maze",
+		"live": "https://adarsh-omnifood.netlify.app/",
+		"img": "./img/Adarsh_Shahi_whiteBg.jpg"
+	}
+]

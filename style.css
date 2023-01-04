@@ -1,0 +1,118 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+
+.grid-4-section {
+	display: grid;
+	grid-template-rows: 10rem 65rem;
+	grid-template-columns: 30rem 70rem;
+	align-items: center;
+	justify-items: center;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 100rem;
+}
+
+.content {
+	background: linear-gradient(
+		358.4deg,
+		rgba(249, 151, 119, 1) -2.1%,
+		rgba(98, 58, 162, 1) 90%
+	);
+}
+
+.main-bg {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 0.1rem;
+}
+
+.projects-heading {
+	font-size: 7rem;
+	letter-spacing: 0.5rem;
+	font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+
+.display {
+	background-color: #fff;
+	color: black;
+	border-radius: 1.4rem;
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+	padding-top: 1.4rem;
+}
+
+.text-content {
+	color: #fff;
+  margin: 32rem 0;
+	line-height: 1.4;
+}
+
+.main-text {
+	font-size: 5rem;
+}
+
+.sub-heading {
+	font-size: 3rem;
+}
+
+.projects-section {
+	/* background: linear-gradient(
+		343deg,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	); */
+	padding-top: 0.1rem;
+}
+
+.number {
+	font-size: 4rem;
+}
+
+.title {
+	font-size: 4.6rem;
+}
+
+.description {
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+  font-weight: 300;
+	padding: 0 2rem;
+}
+.navigation {
+	display: flex;
+	gap: 3rem;
+}
+
+.desc-img {
+	height: 97%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	font-size: 1.4rem;
+	text-decoration: none;
+	cursor: pointer;
+}
