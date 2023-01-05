@@ -20,6 +20,14 @@ body {
 	align-items: center;
 	justify-items: center;
 }
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	color: beige;
+}
 
 .container {
 	margin: 0 auto;
@@ -38,6 +46,7 @@ body {
 }
 
 .main-bg {
+	height: 100vh;
 	display: flex;
 	justify-content: center;
   align-items: center;
@@ -54,13 +63,31 @@ body {
   margin-bottom: 4rem;
 }
 
+.navbar{
+	display: flex;
+}
+
+.nav-links{
+	margin: 2rem 4rem 0 auto;
+	font-size: 2rem !important;
+	letter-spacing: 0.3rem;
+	font-weight: 500;
+	display: flex;
+	gap: 5rem;
+
+}
+
 
 .display {
 	background-color: #fff;
-	color: black;
+	color: white;
 	border-radius: 1.4rem;
 	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 	padding-top: 1.4rem;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: saturate(180%) blur(10px);
+	padding-bottom: 3rem;
+
 }
 
 .text-content {
@@ -84,10 +111,13 @@ body {
 		rgba(252, 70, 107, 1) 100%
 	); */
 	padding-top: 0.1rem;
+	padding: 10rem;
 }
 
 .number {
-	font-size: 4rem;
+	font-size: 8rem;
+	letter-spacing: .2rem;
+	align-self: start;
 }
 
 .title {
@@ -98,9 +128,10 @@ body {
 	font-size: 2rem;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 4rem;
   font-weight: 300;
-	padding: 0 2rem;
+	padding: 0 3rem;
+	letter-spacing: .2rem;
 }
 .navigation {
 	display: flex;
@@ -111,11 +142,3 @@ body {
 	height: 97%;
 }
 
-.btn,
-.btn:link,
-.btn:visited {
-	display: inline-block;
-	font-size: 1.4rem;
-	text-decoration: none;
-	cursor: pointer;
-}
