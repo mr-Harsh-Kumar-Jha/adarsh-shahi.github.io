@@ -24,6 +24,9 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 100rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
 }
 
 .content {
