@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css"
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <h2>Social Accounts</h2>
-    <ul>
-        <li><a href="https://www.instagram.com/_adarsh_shahi/">Instagram</a></li>
-        <li><a href="https://www.facebook.com/adarsh.shahi.1009">Facebook</a></li>
-    </ul>
-
-    <hr>
-
-    <form action="mailto:adarshshahi2404@gmail.com" method="post" enctype="text/plain">
-        <label>Name:</label>
-        <input type="text" name="Name: " value="">
-        <input type="color" name="" value=""><br>
-        <label>Email: </label>
-        <input type="email" name="Email: " value=""><br>
-        <label>Message:</label>
-        <textarea name="Message: " rows="8" cols="50"></textarea><br>
-        <label>Password: </label>
-        <input type="password" name="" value=""><br>
-        <input type="date" name="" value=""><br>
-        <label >Do you want to send message?</label>
-        <input type="checkbox" name="" value=""><br>
-        <input type="submit">
-
-    </form>
-    
-</body>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="contact.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="contact-container">
+				<img class="profile-pic" src="./img/original.jpg" alt="" />
+				<div class="details">
+					<h1>Let's chat about design, product, product, life, or anything</h1>
+					<div class="name">
+						<label for="name-text">Name</label>
+						<input type="text" id="name-text" />
+					</div>
+					<div class="email">
+						<label for="">Email</label>
+						<input type="text" />
+					</div>
+					<div class="subject">
+						<label for="">Text</label>
+						<input type="text" />
+					</div>
+					<div class="message">
+						<label for="">Message</label>
+						<input type="text" />
+					</div>
+					<button>Submit</button>
+				</div>
+				<div class="social-links">
+					<div class="social-email">
+						<h3>Contact Details</h3>
+						<h2>adarshshahi1009@gmail.com</h2>
+					</div>
+          <div class="social-media">
+            <h3>Social</h3>
+            <h2>Linkedin</h2>
+            <h2>Github</h2>
+            <h2>Twitter</h2>
+          </div>
+				</div>
+			</section>
+		</div>
+	</body>
 </html>
