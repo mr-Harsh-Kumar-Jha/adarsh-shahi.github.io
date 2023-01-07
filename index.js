@@ -48,3 +48,7 @@ document.querySelector('.about').addEventListener('click', e => {
 		behavior: "smooth"
 	})
 })
+
+document/querySelector('.get-in-touch').addEventListener('click', e => {
+	location.href = ''
+})

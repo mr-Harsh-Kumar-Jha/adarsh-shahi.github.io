@@ -37,7 +37,7 @@ body {
 	display: inline-block;
 	text-decoration: none;
 	cursor: pointer;
-	color: beige;
+	color: white;
 }
 
 .navbar {
@@ -206,4 +206,8 @@ body {
 .social-media h2 {
 	font-size: 2rem;
 	cursor: pointer;
+}
+
+.social-a{
+	color: black !important;
 }
