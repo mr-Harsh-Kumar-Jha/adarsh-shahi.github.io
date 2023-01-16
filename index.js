@@ -8,8 +8,10 @@ const fetchMoreData = async () => {
 	return await response.json();
 };
 
+let flag = false;
+
 const renderProjects = async () => {
-	document.querySelector('.project-div').innerHTML = ``
+	document.querySelector(".project-div").innerHTML = ``;
 	const projects = await fetchData();
 	document.querySelector(".project-div").classList.add("container");
 	document.querySelector(".project-div").classList.remove("more-container");
@@ -18,9 +20,12 @@ const renderProjects = async () => {
 			.querySelector(".project-div")
 			.appendChild(projectTemplate(project));
 	});
-	document.querySelector(".projects-heading").scrollIntoView({
-		behavior: "smooth",
-	});
+	if (flag) {
+		document.querySelector(".projects-heading").scrollIntoView({
+			behavior: "smooth",
+		});
+		flag = true
+	}
 };
 
 const projectTemplate = (data) => {
@@ -60,29 +65,26 @@ document.querySelector(".about").addEventListener("click", (e) => {
 });
 
 document.querySelector(".see-more-less").addEventListener("click", () => {
-	if(document.querySelector('.project-div').classList.contains('container')){
-		document.querySelector('.see-more-less').innerHTML = `See Less`
+	if (document.querySelector(".project-div").classList.contains("container")) {
+		document.querySelector(".see-more-less").innerHTML = `See Less`;
 		renderMoreProjects();
-	}
-	else {
-
-		document.querySelector('.see-more-less').innerHTML = `See More`
+	} else {
+		document.querySelector(".see-more-less").innerHTML = `See More`;
 		renderProjects();
 	}
 });
 
 const renderMoreProjects = async () => {
-	document.querySelector('.project-div').innerHTML = ``
+	document.querySelector(".project-div").innerHTML = ``;
 	document.querySelector(".project-div").classList.remove("container");
 	document.querySelector(".project-div").classList.add("more-container");
-	const div = document.createElement('div')
-	div.classList.add('grid-3-cols')
-	document.querySelector('.project-div').appendChild(div)
+	const div = document.createElement("div");
+	div.classList.add("grid-3-cols");
+	document.querySelector(".project-div").appendChild(div);
 	const projects = await fetchMoreData();
 	projects.forEach((project) => {
-		document
-			div
-			.appendChild(moreProjectTemplate(project));
+		document;
+		div.appendChild(moreProjectTemplate(project));
 	});
 	document.querySelector(".projects-heading").scrollIntoView({
 		behavior: "smooth",
@@ -90,7 +92,7 @@ const renderMoreProjects = async () => {
 };
 
 const moreProjectTemplate = (data) => {
-	const div = document.createElement('div')
+	const div = document.createElement("div");
 	div.innerHTML = `
 						<div class="project grid-2-cols">
 							<div class="project-title-desc">
